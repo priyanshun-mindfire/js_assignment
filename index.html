@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Students Registration Form</title>
+  </head>
+  <body>
+    <div id="logo">
+        <img src="logo_css.png" width="80px" />
+    </div>
+
+    <div class="header">
+        <h3>This is a registration from</h3>
+    </div>
+
+    <h2>REGISTRATION FORM</h2>
+    <div class="mainform">
+        <form action="submit.html" name="myForm" onsubmit="return validateForm()" method="POST">
+
+            <div class="formdesign" id="name">
+                Name: <input type="text" name="fname" required><br><b><span class="formerror"> </span></b>
+            </div>
+    
+            <div class="formdesign" id="email">
+                Email: <input type="email" name="femail" required><br><b><span class="formerror"> </span></b>
+            </div>
+    
+            <div class="formdesign" id="phone">
+                Phone: <input type="phone" name="fphone" required><br><b><span class="formerror"></span></b>
+            </div>
+    
+            <div class="formdesign" id="pass">
+                Password: <input type="password" name="fpass" required><br><b><span class="formerror"></span></b>
+            </div>
+    
+            <div class="formdesign" id="cpass">
+                Confirm Password: <input type="password" name="fcpass" required><br><b><span class="formerror"></span></b>
+            </div>
+            <div class="formdesign" id="country">
+                Country:
+                <select id="input" onchange="random_function()">
+                    <option>select option</option>
+                    <option>INDIA</option>
+                    <option>USA</option>
+                </select>
+            </div>
+            
+            <div class="formdesign" id="state">
+              <div>
+                State:
+                <select id="output" onchange="random_function1()"></select>
+              </div>
+            </div>
+
+            <!-- <div class="contain">
+              <input type="text" id="capt" readonly="readonly" >
+              <div id="refresh"> <img src="refresh.png" width="50px" onclick="cap()"></div>
+          
+              <input type="text" id="textinput" placeholder="enter..">
+              <button onclick="validcap()">Check</button>
+            </div> -->
+
+
+            <input class="but" type="submit" value="Submit">
+            <input class="reset" type="reset" value="Reset">
+            
+            
+    </div>
+    
+      
+      <!-- <table class="table">
+        <tr>
+          <td>FIRST NAME
+            <span style="color: red;">*</span>
+          </td>
+          <td id="fname">
+            <input
+              class="input"
+              type="text"
+              name="First_name"
+              required
+            /><b><span class="formerror"> </span></b>
+          </td>
+          <div class="formdesign" id="name">
+            Name: <input type="text" name="fname" required><b><span class="formerror"> </span></b>
+          </div>
+        </tr>
+        
+        <tr>
+          <td>LAST NAME
+            <span style="color: red;">*</span>
+          </td>
+          <td>
+            <input
+              class="input"
+              type="text"
+              name="last_name"
+              required
+            />
+          </td>
+        </tr>
+        
+        <tr>
+          <td>EMAIL
+            <span style="color: red;">*</span>
+          </td>
+          <td id="email"><input class="input" type="email" name="femail" required /></td>
+        </tr>
+        <tr>
+          <td>PHONE 1
+            <span style="color: red;">*</span>
+          </td>
+          <td id="phone">
+            <input
+              class="input"
+              type="text"
+              name="fphone"
+              required
+            />
+          </td>
+        </tr>
+    
+        <tr>
+          <td>PASSWORD
+            <span style="color: red;">*</span>
+          </td>
+          <td id="password"><input class="input" type="password" name="fpass" required/></td>
+        </tr>
+        <tr>
+            <td>CONFIRM PASSWORD
+                <span style="color: red;">*</span>
+            </td>
+            <td id="cpassword"><input class="input" type="password" name="fcpass" /></td>
+          </tr>
+        <tr>
+          <td>GENDER</td>
+          <td>
+            Male <input type="radio" name="Gender" value="Male" /> Female
+            <input type="radio" name="Gender" value="Female" />
+          </td>
+        </tr>
+        <tr>
+          <td>ADDRESS 1
+            <span style="color: red;">*</span>
+          </td>
+          <td>
+            <textarea
+              class="input"
+              name="Address_1"
+              rows="4"
+              cols="30"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+            <td>ADDRESS 2</td>
+            <td>
+              <textarea
+                class="input"
+                name="Address_2"
+                rows="4"
+                cols="30"
+              ></textarea>
+            </td>
+          </tr>
+        <tr>
+          <td>PIN CODE
+            <span style="color: red;">*</span>
+          </td>
+          <td>
+            <input class="input" type="text" name="Pin_Code" maxlength="6" />
+            (6 digit number)
+          </td>
+        </tr>
+        <tr>
+            <td>COUNTRY
+              <span style="color: red;">*</span>
+            </td>
+            <td>
+                <select id="input" onchange="random_function()">
+                    <option>select option</option>
+                    <option>INDIA</option>
+                    <option>USA</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>STATE
+              <span style="color: red;">*</span>
+            </td>
+            <td>
+                <div>
+                    <select id="output" onchange="random_function1()">
+                 </div>
+            </td>
+        </tr>
+        <tr>
+          <td>HOBBIES</td>
+
+          <td>
+            Drawing
+            <input type="checkbox" name="Hobby_Drawing" value="Drawing" />
+            Singing
+            <input type="checkbox" name="Hobby_Singing" value="Singing" />
+            Dancing
+            <input type="checkbox" name="Hobby_Dancing" value="Dancing" />
+            Sketching
+            <input type="checkbox" name="Hobby_Cooking" value="Cooking" />
+            <br />
+            Others
+            <input type="checkbox" name="Hobby_Other" value="Other" />
+            <input
+              class="input"
+              type="text"
+              name="Other_Hobby"
+              maxlength="30"
+            />
+          </td>
+        </tr>
+        
+        <tr>
+            <td>SUBSCRIBE NEWS LETTER?</td>
+            <td>
+              YES <input type="radio" name="Gender" value="Male" />
+              NO <input type="radio" name="Gender" value="Female" />
+            </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+          </td>
+        </tr>
+      </table> -->
+    </form>
+    <script src="index.js"></script>
+  </body>
+  
+</html>

@@ -1,0 +1,102 @@
+#logo{ 
+    position:fixed; 
+    top:0; 
+    left:0; 
+} 
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background: #335875;
+    color: rgb(250, 243, 243);
+    font-size: 30px;
+  }
+
+body{
+    background-image: url(https://images.unsplash.com/photo-1593642634402-b0eb5e2eebc9?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);
+}
+
+h2 {
+    margin: auto;
+    width: 35%;
+    padding: 20px;
+    font-size: xx-large;
+    color: black;
+    text-decoration: underline;
+}
+
+/* .table{
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgb(93, 124, 119);
+}
+
+
+.input{
+    border: 2px solid brown;
+    border-radius: 6px;
+}
+
+td{
+    margin: 20px;
+    padding: 5px;
+} */
+
+
+.mainform{
+    text-align: center;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgb(93, 124, 119);
+}
+
+.formdesign {
+    font-size: 20px;
+    text-align: right;
+    width: 60%;
+    
+}
+
+.formdesign input{
+    width: 25%;
+    padding: 5px 5px;
+    border: 1px solid blue;
+    margin: 10px;
+    border-radius: 3px;
+    font-size: 8px;
+}
+
+.formdesign select{
+    width: 25%;
+    padding: 5px 5px;
+    border: 1px solid blue;
+    margin: 10px;
+    border-radius: 3px;
+    font-size: 8px;
+}
+
+ .but {
+    border-radius: 9px;
+    width: 100px;
+    height: 50px;
+    font-size: 25px;
+    margin: 22px 20px;
+    
+} 
+
+.reset{
+    border-radius: 9px;
+    width: 100px;
+    height: 50px;
+    font-size: 25px;
+    margin: 22px 20px;
+} 
+
+
+.formerror {
+    color: red;
+
+}
+
+/* /////////////////// */
